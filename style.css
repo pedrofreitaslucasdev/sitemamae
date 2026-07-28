@@ -1,16 +1,16 @@
 :root {
-  --pink: #1467a8;
-  --pink-dark: #0b4777;
-  --yellow: #ffd93d;
-  --blue: #2f82c4;
-  --purple: #173f63;
+  --pink: #1769aa;
+  --pink-dark: #0e4f86;
+  --yellow: #f5ca24;
+  --blue: #56a6d6;
+  --purple: #24547d;
   --green: #21b969;
-  --ink: #202a32;
-  --muted: #5e6870;
-  --cream: #fffdf0;
+  --ink: #29253c;
+  --muted: #706b80;
+  --cream: #fffaf2;
   --white: #ffffff;
-  --shadow: 0 14px 36px rgba(20, 71, 108, 0.16);
-  --radius: 28px;
+  --shadow: 0 14px 36px rgba(77, 59, 91, 0.12);
+  --radius: 24px;
 }
 
 * {
@@ -25,9 +25,7 @@ html {
 body {
   margin: 0;
   color: var(--ink);
-  background:
-    radial-gradient(circle at 12px 12px, rgba(47, 130, 196, 0.07) 2px, transparent 2.5px) 0 0 / 34px 34px,
-    var(--cream);
+  background: var(--cream);
   font-family: "Nunito", sans-serif;
   line-height: 1.6;
   overflow-x: hidden;
@@ -62,7 +60,7 @@ a {
   z-index: 100;
   top: 0;
   background: rgba(255, 255, 255, 0.94);
-  border-bottom: 4px solid var(--yellow);
+  border-bottom: 1px solid rgba(41, 37, 60, 0.07);
   backdrop-filter: blur(12px);
 }
 
@@ -89,10 +87,10 @@ a {
 }
 
 .brand__logo {
-  width: 54px;
-  height: 54px;
+  width: 48px;
+  height: 48px;
   object-fit: cover;
-  border: 4px solid var(--yellow);
+  border: 3px solid var(--yellow);
   border-radius: 50%;
   box-shadow: 0 4px 12px rgba(36, 84, 125, 0.16);
 }
@@ -104,8 +102,7 @@ a {
   place-content: center;
   gap: 5px;
   padding: 0;
-  background: var(--yellow);
-  border: 2px solid var(--ink);
+  background: #eaf5fc;
   border: 0;
   border-radius: 13px;
   cursor: pointer;
@@ -159,7 +156,6 @@ a {
   background: var(--green);
   border-radius: 14px;
   text-align: center;
-  box-shadow: 0 5px 0 #117c43;
 }
 
 .hero {
@@ -169,10 +165,7 @@ a {
   align-items: center;
   padding: 62px 0 110px;
   overflow: hidden;
-  background:
-    radial-gradient(circle at 88% 18%, rgba(255, 255, 255, 0.75) 0 46px, #343b40 47px 55px, transparent 56px),
-    radial-gradient(circle at 88% 18%, #a9e5ff 0 20px, #333 21px 27px, #fff 28px 45px, transparent 46px),
-    linear-gradient(145deg, #ffe65c 0%, #ffd93d 55%, #f5bf25 100%);
+  background: linear-gradient(135deg, #eaf6ff 0%, #fff9d7 55%, #edf8ff 100%);
 }
 
 .hero__content {
@@ -185,9 +178,8 @@ a {
 .eyebrow {
   display: inline-flex;
   padding: 7px 13px;
-  color: var(--white);
-  background: var(--ink);
-  border: 2px solid rgba(255, 255, 255, 0.8);
+  color: #73590a;
+  background: #fff0aa;
   border-radius: 999px;
   font-size: 0.78rem;
   font-weight: 800;
@@ -196,9 +188,8 @@ a {
 }
 
 .eyebrow--pink {
-  color: var(--white);
-  background: var(--blue);
-  border-color: var(--blue);
+  color: #155588;
+  background: #dcefff;
 }
 
 .eyebrow--yellow {
@@ -222,8 +213,7 @@ h1 {
 }
 
 h1 span {
-  color: var(--blue);
-  text-shadow: 3px 3px 0 var(--white);
+  color: var(--pink);
 }
 
 .hero__copy > p {
@@ -251,9 +241,8 @@ h1 span {
 
 .button--primary {
   color: var(--white);
-  background: var(--blue);
-  border: 2px solid var(--ink);
-  box-shadow: 0 7px 0 var(--ink);
+  background: var(--pink);
+  box-shadow: 0 10px 22px rgba(255, 91, 127, 0.3);
 }
 
 .button--primary span {
@@ -283,8 +272,7 @@ h1 span {
 .hero__photo {
   padding: 10px;
   background: var(--white);
-  border: 5px solid var(--ink);
-  border-radius: 38% 38% 30% 30% / 45% 45% 28% 28%;
+  border-radius: 45% 55% 45% 55% / 52% 42% 58% 48%;
   box-shadow: var(--shadow);
   transform: rotate(2deg);
 }
@@ -303,8 +291,7 @@ h1 span {
   gap: 8px;
   padding: 10px 14px;
   background: rgba(255, 255, 255, 0.94);
-  border: 2px solid var(--ink);
-  border-radius: 999px;
+  border-radius: 14px;
   box-shadow: var(--shadow);
   font-size: 0.75rem;
   font-weight: 800;
@@ -335,7 +322,7 @@ h1 span {
   height: 150px;
   top: 11%;
   right: -80px;
-  background: var(--blue);
+  background: var(--yellow);
 }
 
 .hero__shape--two {
@@ -343,7 +330,7 @@ h1 span {
   height: 95px;
   bottom: 18%;
   left: -55px;
-  background: var(--ink);
+  background: var(--blue);
 }
 
 .wave {
@@ -386,7 +373,7 @@ h1 span {
 .product-card {
   overflow: hidden;
   background: var(--white);
-  border: 3px solid var(--blue);
+  border: 1px solid rgba(41, 37, 60, 0.06);
   border-radius: var(--radius);
   box-shadow: 0 8px 26px rgba(77, 59, 91, 0.09);
   transition: transform 0.25s ease, box-shadow 0.25s ease;
@@ -395,7 +382,6 @@ h1 span {
 .product-card__image {
   position: relative;
   overflow: hidden;
-  border-bottom: 8px solid var(--yellow);
 }
 
 .product-card__image img {
@@ -412,16 +398,14 @@ h1 span {
   left: 14px;
   padding: 6px 10px;
   color: var(--white);
-  background: var(--blue);
-  border: 2px solid var(--white);
+  background: var(--pink);
   border-radius: 999px;
   font-size: 0.72rem;
   font-weight: 800;
 }
 
 .badge--blue {
-  color: var(--ink);
-  background: var(--yellow);
+  background: var(--blue);
 }
 
 .badge--yellow {
@@ -447,7 +431,7 @@ h1 span {
 
 .price {
   margin: 10px 0 17px;
-  color: var(--blue);
+  color: var(--pink);
   font-family: "Baloo 2", cursive;
   font-size: 1.7rem;
   font-weight: 800;
@@ -474,8 +458,7 @@ h1 span {
   gap: 28px;
   padding: 34px 24px;
   color: var(--white);
-  background: linear-gradient(135deg, #1467a8, #2f82c4);
-  border: 5px solid var(--yellow);
+  background: linear-gradient(135deg, #7055c5, #4c86d9);
   border-radius: 28px;
   box-shadow: 0 18px 40px rgba(89, 87, 181, 0.24);
   overflow: hidden;
@@ -553,9 +536,7 @@ h1 span {
 
 .footer {
   padding: 40px 0 105px;
-  background:
-    linear-gradient(90deg, transparent 49%, rgba(255,255,255,0.04) 50%, transparent 51%) 0 0 / 44px 44px,
-    #202a32;
+  background: #29253c;
   color: rgba(255,255,255,0.7);
   text-align: center;
 }
@@ -576,7 +557,7 @@ h1 span {
 }
 
 .brand--footer .brand__logo {
-  border-color: var(--yellow);
+  border-color: var(--white);
 }
 
 .footer p {
@@ -740,7 +721,7 @@ h1 span {
 
   .button--primary:hover {
     background: var(--pink-dark);
-    box-shadow: 0 7px 0 var(--ink);
+    box-shadow: 0 13px 25px rgba(255, 91, 127, 0.38);
   }
 
   .button--whatsapp:hover,
