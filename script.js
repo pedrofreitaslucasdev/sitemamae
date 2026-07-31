@@ -29,9 +29,33 @@ menuButton.addEventListener("click", () => {
 
 menuLinks.forEach((link) => link.addEventListener("click", closeMenu));
 
+const storySection = document.querySelector("#historia");
+const storyLinks = document.querySelectorAll('a[href="#historia"]');
+const storyCloseButton = document.querySelector(".story__close");
+
+function setStoryOpen(isOpen) {
+  storySection.classList.toggle("is-open", isOpen);
+  storyLinks.forEach((link) => link.setAttribute("aria-expanded", String(isOpen)));
+
+  if (isOpen) {
+    requestAnimationFrame(() => {
+      storySection.scrollIntoView({ behavior: "smooth", block: "start" });
+    });
+  }
+}
+
+storyLinks.forEach((link) => {
+  link.addEventListener("click", (event) => {
+    event.preventDefault();
+    setStoryOpen(!storySection.classList.contains("is-open"));
+  });
+});
+
+storyCloseButton.addEventListener("click", () => setStoryOpen(false));
+
 productButtons.forEach((button) => {
   const productName = button.dataset.product;
-  const message = `Olá! Tenho interesse no brinquedo ${productName}. Pode me passar mais informações?`;
+  const message = `Oi! Vi o ${productName} no site e fiquei interessado(a). Ainda está disponível?`;
   button.href = `https://wa.me/${WHATSAPP_NUMBER}?text=${encodeURIComponent(message)}`;
 });
 

@@ -1,15 +1,15 @@
 :root {
-  --pink: #1769aa;
-  --pink-dark: #0e4f86;
-  --yellow: #f5ca24;
-  --blue: #56a6d6;
-  --purple: #24547d;
-  --green: #21b969;
-  --ink: #29253c;
-  --muted: #706b80;
-  --cream: #fffaf2;
+  --pink: #2f6fa5;
+  --pink-dark: #1f5680;
+  --yellow: #ffd400;
+  --blue: #4fc3e8;
+  --purple: #35485c;
+  --green: #4cd98a;
+  --ink: #26313f;
+  --muted: #6b7785;
+  --cream: #fffbe6;
   --white: #ffffff;
-  --shadow: 0 14px 36px rgba(77, 59, 91, 0.12);
+  --shadow: 0 14px 36px rgba(38, 49, 63, 0.14);
   --radius: 24px;
 }
 
@@ -102,7 +102,7 @@ a {
   place-content: center;
   gap: 5px;
   padding: 0;
-  background: #eaf5fc;
+  background: #fff3c4;
   border: 0;
   border-radius: 13px;
   cursor: pointer;
@@ -165,7 +165,7 @@ a {
   align-items: center;
   padding: 62px 0 110px;
   overflow: hidden;
-  background: linear-gradient(135deg, #eaf6ff 0%, #fff9d7 55%, #edf8ff 100%);
+  background: linear-gradient(135deg, #fff3b0 0%, #ffe382 55%, #dcf0fb 100%);
 }
 
 .hero__content {
@@ -178,8 +178,8 @@ a {
 .eyebrow {
   display: inline-flex;
   padding: 7px 13px;
-  color: #73590a;
-  background: #fff0aa;
+  color: #6b4e00;
+  background: #fff0b8;
   border-radius: 999px;
   font-size: 0.78rem;
   font-weight: 800;
@@ -188,8 +188,8 @@ a {
 }
 
 .eyebrow--pink {
-  color: #155588;
-  background: #dcefff;
+  color: #1f5680;
+  background: #dceffa;
 }
 
 .eyebrow--yellow {
@@ -242,7 +242,7 @@ h1 span {
 .button--primary {
   color: var(--white);
   background: var(--pink);
-  box-shadow: 0 10px 22px rgba(255, 91, 127, 0.3);
+  box-shadow: 0 10px 22px rgba(47, 111, 165, 0.32);
 }
 
 .button--primary span {
@@ -347,6 +347,70 @@ h1 span {
   padding: 80px 0;
 }
 
+.story {
+  display: none;
+  padding: 70px 0;
+}
+
+.story.is-open {
+  display: block;
+}
+
+.story__box {
+  display: grid;
+  gap: 32px;
+  align-items: center;
+}
+
+.story__video {
+  justify-self: center;
+  width: min(100%, 320px);
+}
+
+.story__video video {
+  width: 100%;
+  aspect-ratio: 9 / 16;
+  background: var(--ink);
+  border: 6px solid var(--white);
+  border-radius: 28px;
+  box-shadow: var(--shadow);
+  object-fit: cover;
+}
+
+.story__content h2 {
+  margin-top: 12px;
+  font-size: clamp(2rem, 8vw, 2.75rem);
+}
+
+.story__content p {
+  margin: 0 0 14px;
+  color: var(--muted);
+}
+
+.story__content p:last-child {
+  margin-bottom: 0;
+}
+
+.story__content strong {
+  color: var(--ink);
+}
+
+.story__close {
+  margin-top: 18px;
+  padding: 0;
+  color: var(--pink);
+  background: none;
+  border: 0;
+  font-family: "Nunito", sans-serif;
+  font-size: 0.85rem;
+  font-weight: 800;
+  cursor: pointer;
+}
+
+.story__close:hover {
+  text-decoration: underline;
+}
+
 .section-heading {
   max-width: 650px;
   margin: 0 auto 38px;
@@ -429,6 +493,13 @@ h1 span {
   font-size: 1.55rem;
 }
 
+.product-card__description {
+  margin: 8px 0 0;
+  color: var(--muted);
+  font-size: 0.88rem;
+  line-height: 1.5;
+}
+
 .price {
   margin: 10px 0 17px;
   color: var(--pink);
@@ -458,9 +529,9 @@ h1 span {
   gap: 28px;
   padding: 34px 24px;
   color: var(--white);
-  background: linear-gradient(135deg, #7055c5, #4c86d9);
+  background: linear-gradient(135deg, #35485c, #2f6fa5);
   border-radius: 28px;
-  box-shadow: 0 18px 40px rgba(89, 87, 181, 0.24);
+  box-shadow: 0 18px 40px rgba(43, 63, 82, 0.32);
   overflow: hidden;
 }
 
@@ -536,7 +607,7 @@ h1 span {
 
 .footer {
   padding: 40px 0 105px;
-  background: #29253c;
+  background: #1e2833;
   color: rgba(255,255,255,0.7);
   text-align: center;
 }
@@ -617,7 +688,7 @@ h1 span {
   background: var(--green);
   border: 3px solid var(--white);
   border-radius: 50%;
-  box-shadow: 0 8px 24px rgba(20, 114, 66, 0.36);
+  box-shadow: 0 8px 24px rgba(46, 168, 115, 0.36);
   font-size: 1.7rem;
 }
 
@@ -690,6 +761,15 @@ h1 span {
     grid-template-columns: repeat(3, 1fr);
   }
 
+  .story__box {
+    grid-template-columns: minmax(220px, 300px) 1fr;
+    gap: 56px;
+  }
+
+  .story__video {
+    justify-self: start;
+  }
+
   .shipping__box {
     grid-template-columns: auto 1fr minmax(225px, 0.55fr);
     align-items: center;
@@ -721,12 +801,12 @@ h1 span {
 
   .button--primary:hover {
     background: var(--pink-dark);
-    box-shadow: 0 13px 25px rgba(255, 91, 127, 0.38);
+    box-shadow: 0 13px 25px rgba(47, 111, 165, 0.4);
   }
 
   .button--whatsapp:hover,
   .nav__whatsapp:hover {
-    background: #169d56;
+    background: #34b87a;
   }
 
   .product-card:hover {
