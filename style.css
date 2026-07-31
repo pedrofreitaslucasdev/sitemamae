@@ -151,6 +151,10 @@ a {
   font-weight: 800;
 }
 
+.nav a[href="#historia"] {
+  order: 5;
+}
+
 .nav__whatsapp {
   color: var(--white);
   background: var(--green);
@@ -737,6 +741,10 @@ h1 span {
 
   .nav a {
     padding: 10px 12px;
+  }
+
+  .nav a[href="#historia"] {
+    order: 0;
   }
 
   .nav__whatsapp {
