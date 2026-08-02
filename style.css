@@ -152,10 +152,11 @@ a {
 }
 
 .nav a[href="#historia"] {
-  order: 5;
+  order: 4;
 }
 
 .nav__whatsapp {
+  order: 5;
   color: var(--white);
   background: var(--green);
   border-radius: 14px;
@@ -521,6 +522,17 @@ h1 span {
   width: 100%;
   color: var(--white);
   background: var(--green);
+}
+
+.icon-whatsapp {
+  display: inline-flex;
+  align-items: center;
+}
+
+.icon-whatsapp svg {
+  width: 1.1em;
+  height: 1.1em;
+  fill: currentColor;
 }
 
 .shipping {
