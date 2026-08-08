@@ -3,10 +3,16 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="Toys Kids: brinquedos escolhidos com carinho para a criançada brincar, aprender e sorrir. Compre pelo WhatsApp com entrega para todo o Brasil.">
+  <meta name="description" content="Toys Kids: brinquedinho de coleção novo toda semana. Moranguinho, Emília, My Little Pony, Mimo, Disney, Hot Wheels e McDonald's. Foto de perto, estado do brinquedinho e preço. Guardamos até 3 meses e mandamos tudo num frete só.">
   <meta name="theme-color" content="#ffd400">
-  <title>Toys Kids | Brinquedos escolhidos com carinho</title>
+  <title>Toys Kids | Brinquedinho de coleção, novidade toda semana</title>
   <link rel="icon" href="logo.jpg" type="image/jpeg">
+
+  <meta property="og:title" content="Toys Kids | Brinquedinho de coleção, novidade toda semana">
+  <meta property="og:description" content="Foto de perto, estado do brinquedinho e preço. Live toda quinta às 19:30. Guardamos até 3 meses e mandamos tudo num frete só.">
+  <meta property="og:image" content="logo.jpg">
+  <meta property="og:type" content="website">
+
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Baloo+2:wght@600;700;800&family=Nunito:wght@400;600;700;800&display=swap" rel="stylesheet">
@@ -25,45 +31,296 @@
       </button>
 
       <nav class="nav" id="main-menu" aria-label="Navegação principal">
-        <a href="#inicio">Início</a>
-        <a href="#historia" aria-controls="historia" aria-expanded="false">Nossa História</a>
-        <a href="#brinquedos">Brinquedos</a>
-        <a href="#entregas">Entregas</a>
-        <a class="nav__whatsapp" href="https://wa.me/5512992141645?text=Olá!%20Gostaria%20de%20conhecer%20os%20brinquedos." target="_blank" rel="noopener">Fale conosco</a>
+        <a href="#brinquedinhos">O que chegou</a>
+        <a href="#encomenda">Encomenda</a>
+        <a href="#entrega">Entrega</a>
+        <a href="#historia">Nossa História</a>
+        <a class="nav__whatsapp" href="https://wa.me/5512992141645?text=Oi%20amiga!%20Vim%20pelo%20site." target="_blank" rel="noopener">Chamar no zap</a>
       </nav>
     </div>
   </header>
 
   <main>
+    <!-- ================= TOPO ================= -->
     <section class="hero" id="inicio">
       <div class="hero__shape hero__shape--one"></div>
       <div class="hero__shape hero__shape--two"></div>
       <div class="container hero__content">
         <div class="hero__copy">
-          <span class="eyebrow">✨ Brincar é coisa séria</span>
-          <h1>Diversão de verdade <span>pra cada idade</span></h1>
-          <p>Brinquedos escolhidos um a um pra estimular a imaginação e garantir boas risadas em cada fase da infância.</p>
-          <a class="button button--primary" href="#brinquedos">
-            Ver brinquedos
-            <span aria-hidden="true">↓</span>
-          </a>
-          <div class="hero__benefits" aria-label="Nossos diferenciais">
-            <span>✓ Compra 100% segura</span>
-            <span>✓ Entrega para todo o Brasil</span>
+          <span class="eyebrow">💛 Pra criança que há dentro da gente</span>
+          <h1>Tá atrás de algum? <span>Olha o que chegou.</span></h1>
+          <p>Brinquedinho de coleção novo toda semana. Foto de perto, o estado dele e o valor — sem precisar perguntar “qto?” nos comentários.</p>
+
+          <div class="hero__actions">
+            <a class="button button--primary" href="#brinquedinhos">
+              Ver os brinquedinhos
+              <span aria-hidden="true">↓</span>
+            </a>
+            <a class="button button--ghost" href="#encomenda">Procuro um brinquedinho</a>
+          </div>
+
+          <p class="hero__live">
+            <strong>Live toda quinta, 19:30</strong>, ao vivo no Facebook.
+            <span id="proxima-live"></span>
+          </p>
+
+          <div class="hero__benefits" aria-label="Como funciona">
+            <span>✓ Guardamos até 3 meses</span>
+            <span>✓ Tudo num frete só</span>
+            <span>✓ Enviamos pra todo o Brasil</span>
           </div>
         </div>
 
-        <div class="hero__visual" aria-label="Criança brincando com blocos coloridos">
+        <div class="hero__visual">
           <div class="hero__photo">
-            <img src="https://images.unsplash.com/photo-1758687126192-98f54f4b747f?auto=format&fit=crop&w=900&q=85" alt="Pai e filho brincando juntos com blocos coloridos" fetchpriority="high">
+            <!--
+              Foto de referência: peguei do Facebook de vocês (prateleira de miniaturas,
+              post de 30/07). Troca por uma foto nova da semana quando quiser.
+              Fica melhor deitada.
+            -->
+            <img src="fotos/capa.jpg" alt="Prateleira de miniaturas da Toys Kids" fetchpriority="high" onerror="this.closest('.hero__visual').classList.add('is-placeholder')">
           </div>
-          <div class="floating-card floating-card--top"><span>🎨</span> Criatividade</div>
-          <div class="floating-card floating-card--bottom"><span>💛</span> Sorriso garantido</div>
+          <div class="floating-card floating-card--top"><span>📦</span> Novidade toda semana</div>
+          <div class="floating-card floating-card--bottom"><span>💛</span> Desde 2023</div>
         </div>
       </div>
       <div class="wave" aria-hidden="true"></div>
     </section>
 
+    <!-- ================= PROVA ================= -->
+    <section class="proof" aria-label="A Toys Kids em números">
+      <div class="container proof__grid">
+        <div class="proof__item">
+          <strong>2.857</strong>
+          <span>amigas e amigos no Facebook</span>
+        </div>
+        <div class="proof__item">
+          <strong>3,2 mil</strong>
+          <span>comentários numa única live</span>
+        </div>
+        <div class="proof__item">
+          <strong>Desde 2023</strong>
+          <span>fazendo live toda semana</span>
+        </div>
+        <div class="proof__item">
+          <strong>Lorena, SP</strong>
+          <span>Vale do Paraíba — enviamos pra todo o Brasil</span>
+        </div>
+      </div>
+    </section>
+
+    <!-- ================= BRINQUEDINHOS ================= -->
+    <section class="products section" id="brinquedinhos">
+      <div class="container">
+        <div class="section-heading">
+          <span class="eyebrow eyebrow--pink">Atualizado toda semana</span>
+          <h2>Chegaram essa semana</h2>
+          <p>Viu um que você quer? Clica em <strong>Quero!</strong> que já abre o zap com o nome dele escrito.</p>
+        </div>
+
+        <div class="filtros" role="group" aria-label="Filtrar por tipo de brinquedinho">
+          <button type="button" class="filtro is-active" data-filtro="todos">Tudo</button>
+          <button type="button" class="filtro" data-filtro="boneca">Bonecas</button>
+          <button type="button" class="filtro" data-filtro="miniatura">Miniaturas</button>
+          <button type="button" class="filtro" data-filtro="pelucia">Pelúcia</button>
+          <button type="button" class="filtro" data-filtro="carrinho">Hot Wheels</button>
+          <button type="button" class="filtro" data-filtro="mcdonalds">McDonald's</button>
+          <button type="button" class="filtro" data-filtro="importado">Importados</button>
+        </div>
+
+        <div class="product-grid" id="grade">
+
+          <!--
+            ============================================================
+            COMO ADICIONAR UM BRINQUEDINHO
+            Copia um bloco <article> inteiro, cola aqui e troca:
+              1. id="p-..."            → apelido dele, sem acento e sem espaço (vira o link)
+              2. data-tipo="..."       → boneca | miniatura | pelucia | carrinho | mcdonalds | importado
+              3. <img src="fotos/...">  → o arquivo da foto (põe a foto na pasta fotos/)
+              4. alt="..."             → descrição curta da foto
+              5. o nome em <h3>        → o nome que as clientes usam pra procurar
+              6. <p class="estado">    → e a classe: estado--ok (tudo certo) ou estado--aviso (tem avaria)
+              7. a descrição            → escreve como você falaria na live
+              8. o preço
+              9. data-produto="..."    → o mesmo nome do <h3> (é o que vai escrito no zap)
+            Pra tirar um brinquedinho que vendeu: apaga o bloco, ou troca a classe
+            "product-card" por "product-card is-vendida".
+
+            AS FOTOS DE AGORA SÃO DA INTERNET, só de referência, e a pasta fotos/
+            está no .gitignore (não sobe pro site). Quando tiver as fotos de vocês,
+            troca os arquivos e tira a linha "fotos/" do .gitignore.
+            ============================================================
+          -->
+
+          <article class="product-card" id="p-moranguinho" data-tipo="boneca">
+            <div class="product-card__image">
+              <span class="badge">Novidade</span>
+              <img src="fotos/moranguinho.jpg" alt="Boneca Moranguinho na caixa original" loading="lazy">
+            </div>
+            <div class="product-card__content">
+              <span class="product-card__category">Boneca</span>
+              <h3>Moranguinho</h3>
+              <p class="estado estado--ok">Lacrada · na caixa</p>
+              <p class="product-card__description">Moranguinho original na caixa, nunca aberta. Cheirinho de morango ainda pega. Caixa com um amassadinho no canto de cima, mostro na foto.</p>
+              <p class="price"><small>R$</small> 189,90</p>
+              <div class="product-card__acoes">
+                <a class="button button--whatsapp" data-produto="Moranguinho" href="#" target="_blank" rel="noopener">
+                  <span class="icon-whatsapp" aria-hidden="true"><svg viewBox="0 0 448 512"><path fill="currentColor" d="M380.9 97.1C339 55.1 283.2 32 223.9 32c-122.4 0-222 99.6-222 222 0 39.1 10.2 77.3 29.6 111L0 480l117.7-30.9c32.4 17.7 68.9 27 106.1 27h.1c122.3 0 224.1-99.6 224.1-222 0-59.3-25.2-115-67.1-157zM223.9 431.9c-33.2 0-65.7-8.9-94-25.7l-6.7-4-69.8 18.3L72 351.6l-4.4-7c-18.5-29.4-28.2-63.3-28.2-98.2 0-101.7 82.8-184.5 184.6-184.5 49.3 0 95.6 19.2 130.4 54.1c34.8 34.9 56.2 81.2 56.1 130.5 0 101.8-84.9 184.6-186.6 184.6zm101.2-138.2c-5.5-2.8-32.8-16.2-37.9-18-5.1-1.9-8.8-2.8-12.5 2.8-3.7 5.6-14.3 18-17.6 21.8-3.2 3.7-6.5 4.2-12 1.4-32.4-16.2-53.7-28.9-75.1-65.5-5.7-9.8 5.7-9.1 16.3-30.3 1.8-3.7.9-6.9-.5-9.7-1.4-2.8-12.5-30.1-17.1-41.2-4.5-10.8-9.1-9.3-12.5-9.5-3.2-.2-6.9-.2-10.6-.2-3.7 0-9.7 1.4-14.8 6.9-5.1 5.6-19.4 19-19.4 46.3 0 27.3 19.9 53.7 22.6 57.42.8 3.7 39.1 59.7 94.8 83.8 35.2 15.2 49 16.5 66.6 13.9 10.7-1.6 32.8-13.4 37.4-26.4 4.6-13 4.6-24.1 3.2-26.4-1.3-2.5-5-3.9-10.5-6.6z"/></svg></span> Quero!
+                </a>
+                <button type="button" class="link-peca" data-link="p-moranguinho" aria-label="Copiar o link de Moranguinho">🔗 Copiar link</button>
+              </div>
+            </div>
+          </article>
+
+          <article class="product-card" id="p-emilia" data-tipo="boneca">
+            <div class="product-card__image">
+              <img src="fotos/emilia.jpg" alt="Boneca Emília do Sítio do Picapau Amarelo" loading="lazy">
+            </div>
+            <div class="product-card__content">
+              <span class="product-card__category">Boneca</span>
+              <h3>Emília</h3>
+              <p class="estado estado--ok">Sem avaria · solta</p>
+              <p class="product-card__description">Emília de pano, inteirinha e bem conservada. Cabelo de lã sem falha, vestidinho e listradinha da perna completos. Sem a caixa.</p>
+              <p class="price"><small>R$</small> 145,00</p>
+              <div class="product-card__acoes">
+                <a class="button button--whatsapp" data-produto="Emília" href="#" target="_blank" rel="noopener">
+                  <span class="icon-whatsapp" aria-hidden="true"><svg viewBox="0 0 448 512"><path fill="currentColor" d="M380.9 97.1C339 55.1 283.2 32 223.9 32c-122.4 0-222 99.6-222 222 0 39.1 10.2 77.3 29.6 111L0 480l117.7-30.9c32.4 17.7 68.9 27 106.1 27h.1c122.3 0 224.1-99.6 224.1-222 0-59.3-25.2-115-67.1-157zM223.9 431.9c-33.2 0-65.7-8.9-94-25.7l-6.7-4-69.8 18.3L72 351.6l-4.4-7c-18.5-29.4-28.2-63.3-28.2-98.2 0-101.7 82.8-184.5 184.6-184.5 49.3 0 95.6 19.2 130.4 54.1c34.8 34.9 56.2 81.2 56.1 130.5 0 101.8-84.9 184.6-186.6 184.6zm101.2-138.2c-5.5-2.8-32.8-16.2-37.9-18-5.1-1.9-8.8-2.8-12.5 2.8-3.7 5.6-14.3 18-17.6 21.8-3.2 3.7-6.5 4.2-12 1.4-32.4-16.2-53.7-28.9-75.1-65.5-5.7-9.8 5.7-9.1 16.3-30.3 1.8-3.7.9-6.9-.5-9.7-1.4-2.8-12.5-30.1-17.1-41.2-4.5-10.8-9.1-9.3-12.5-9.5-3.2-.2-6.9-.2-10.6-.2-3.7 0-9.7 1.4-14.8 6.9-5.1 5.6-19.4 19-19.4 46.3 0 27.3 19.9 53.7 22.6 57.42.8 3.7 39.1 59.7 94.8 83.8 35.2 15.2 49 16.5 66.6 13.9 10.7-1.6 32.8-13.4 37.4-26.4 4.6-13 4.6-24.1 3.2-26.4-1.3-2.5-5-3.9-10.5-6.6z"/></svg></span> Quero!
+                </a>
+                <button type="button" class="link-peca" data-link="p-emilia" aria-label="Copiar o link de Emília">🔗 Copiar link</button>
+              </div>
+            </div>
+          </article>
+
+          <article class="product-card" id="p-my-little-pony" data-tipo="miniatura">
+            <div class="product-card__image">
+              <span class="badge badge--blue">Raridade</span>
+              <img src="fotos/my-little-pony.jpg" alt="My Little Pony na cartela original" loading="lazy">
+            </div>
+            <div class="product-card__content">
+              <span class="product-card__category">Miniatura</span>
+              <h3>My Little Pony</h3>
+              <p class="estado estado--ok">Lacrado · na cartela</p>
+              <p class="product-card__description">Pony na cartela fechada, do jeito que saiu da loja. Cartela boa, sem rasgo. Pra quem coleciona sem abrir.</p>
+              <p class="price"><small>R$</small> 98,00</p>
+              <div class="product-card__acoes">
+                <a class="button button--whatsapp" data-produto="My Little Pony" href="#" target="_blank" rel="noopener">
+                  <span class="icon-whatsapp" aria-hidden="true"><svg viewBox="0 0 448 512"><path fill="currentColor" d="M380.9 97.1C339 55.1 283.2 32 223.9 32c-122.4 0-222 99.6-222 222 0 39.1 10.2 77.3 29.6 111L0 480l117.7-30.9c32.4 17.7 68.9 27 106.1 27h.1c122.3 0 224.1-99.6 224.1-222 0-59.3-25.2-115-67.1-157zM223.9 431.9c-33.2 0-65.7-8.9-94-25.7l-6.7-4-69.8 18.3L72 351.6l-4.4-7c-18.5-29.4-28.2-63.3-28.2-98.2 0-101.7 82.8-184.5 184.6-184.5 49.3 0 95.6 19.2 130.4 54.1c34.8 34.9 56.2 81.2 56.1 130.5 0 101.8-84.9 184.6-186.6 184.6zm101.2-138.2c-5.5-2.8-32.8-16.2-37.9-18-5.1-1.9-8.8-2.8-12.5 2.8-3.7 5.6-14.3 18-17.6 21.8-3.2 3.7-6.5 4.2-12 1.4-32.4-16.2-53.7-28.9-75.1-65.5-5.7-9.8 5.7-9.1 16.3-30.3 1.8-3.7.9-6.9-.5-9.7-1.4-2.8-12.5-30.1-17.1-41.2-4.5-10.8-9.1-9.3-12.5-9.5-3.2-.2-6.9-.2-10.6-.2-3.7 0-9.7 1.4-14.8 6.9-5.1 5.6-19.4 19-19.4 46.3 0 27.3 19.9 53.7 22.6 57.42.8 3.7 39.1 59.7 94.8 83.8 35.2 15.2 49 16.5 66.6 13.9 10.7-1.6 32.8-13.4 37.4-26.4 4.6-13 4.6-24.1 3.2-26.4-1.3-2.5-5-3.9-10.5-6.6z"/></svg></span> Quero!
+                </a>
+                <button type="button" class="link-peca" data-link="p-my-little-pony" aria-label="Copiar o link de My Little Pony">🔗 Copiar link</button>
+              </div>
+            </div>
+          </article>
+
+          <article class="product-card" id="p-minions-mclanche" data-tipo="mcdonalds">
+            <div class="product-card__image">
+              <span class="badge badge--yellow">Lote</span>
+              <img src="fotos/minions.jpg" alt="Coleção de Minions do McLanche Feliz" loading="lazy">
+            </div>
+            <div class="product-card__content">
+              <span class="product-card__category">McDonald's</span>
+              <h3>Minions do McLanche Feliz</h3>
+              <p class="estado estado--ok">Soltos · sem avaria</p>
+              <p class="product-card__description">Lote com a turma toda do Meu Malvado Favorito. Todos funcionando, sem tinta descascada. Levando o lote inteiro faço melhor.</p>
+              <p class="price"><small>R$</small> 12,00</p>
+              <div class="product-card__acoes">
+                <a class="button button--whatsapp" data-produto="Minions do McLanche Feliz" href="#" target="_blank" rel="noopener">
+                  <span class="icon-whatsapp" aria-hidden="true"><svg viewBox="0 0 448 512"><path fill="currentColor" d="M380.9 97.1C339 55.1 283.2 32 223.9 32c-122.4 0-222 99.6-222 222 0 39.1 10.2 77.3 29.6 111L0 480l117.7-30.9c32.4 17.7 68.9 27 106.1 27h.1c122.3 0 224.1-99.6 224.1-222 0-59.3-25.2-115-67.1-157zM223.9 431.9c-33.2 0-65.7-8.9-94-25.7l-6.7-4-69.8 18.3L72 351.6l-4.4-7c-18.5-29.4-28.2-63.3-28.2-98.2 0-101.7 82.8-184.5 184.6-184.5 49.3 0 95.6 19.2 130.4 54.1c34.8 34.9 56.2 81.2 56.1 130.5 0 101.8-84.9 184.6-186.6 184.6zm101.2-138.2c-5.5-2.8-32.8-16.2-37.9-18-5.1-1.9-8.8-2.8-12.5 2.8-3.7 5.6-14.3 18-17.6 21.8-3.2 3.7-6.5 4.2-12 1.4-32.4-16.2-53.7-28.9-75.1-65.5-5.7-9.8 5.7-9.1 16.3-30.3 1.8-3.7.9-6.9-.5-9.7-1.4-2.8-12.5-30.1-17.1-41.2-4.5-10.8-9.1-9.3-12.5-9.5-3.2-.2-6.9-.2-10.6-.2-3.7 0-9.7 1.4-14.8 6.9-5.1 5.6-19.4 19-19.4 46.3 0 27.3 19.9 53.7 22.6 57.42.8 3.7 39.1 59.7 94.8 83.8 35.2 15.2 49 16.5 66.6 13.9 10.7-1.6 32.8-13.4 37.4-26.4 4.6-13 4.6-24.1 3.2-26.4-1.3-2.5-5-3.9-10.5-6.6z"/></svg></span> Quero!
+                </a>
+                <button type="button" class="link-peca" data-link="p-minions-mclanche" aria-label="Copiar o link de Minions do McLanche Feliz">🔗 Copiar link</button>
+              </div>
+            </div>
+          </article>
+
+          <article class="product-card" id="p-hot-wheels" data-tipo="carrinho">
+            <div class="product-card__image">
+              <img src="fotos/hot-wheels.jpg" alt="Carrinhos Hot Wheels nas cartelas" loading="lazy">
+            </div>
+            <div class="product-card__content">
+              <span class="product-card__category">Hot Wheels</span>
+              <h3>Hot Wheels na cartela</h3>
+              <p class="estado estado--ok">Lacrado · na cartela</p>
+              <p class="product-card__description">Cartela fechada, carrinho nunca saiu de dentro. Tenho vários modelos — me chama que mando foto dos que ainda tem.</p>
+              <p class="price"><small>R$</small> 22,00</p>
+              <div class="product-card__acoes">
+                <a class="button button--whatsapp" data-produto="Hot Wheels na cartela" href="#" target="_blank" rel="noopener">
+                  <span class="icon-whatsapp" aria-hidden="true"><svg viewBox="0 0 448 512"><path fill="currentColor" d="M380.9 97.1C339 55.1 283.2 32 223.9 32c-122.4 0-222 99.6-222 222 0 39.1 10.2 77.3 29.6 111L0 480l117.7-30.9c32.4 17.7 68.9 27 106.1 27h.1c122.3 0 224.1-99.6 224.1-222 0-59.3-25.2-115-67.1-157zM223.9 431.9c-33.2 0-65.7-8.9-94-25.7l-6.7-4-69.8 18.3L72 351.6l-4.4-7c-18.5-29.4-28.2-63.3-28.2-98.2 0-101.7 82.8-184.5 184.6-184.5 49.3 0 95.6 19.2 130.4 54.1c34.8 34.9 56.2 81.2 56.1 130.5 0 101.8-84.9 184.6-186.6 184.6zm101.2-138.2c-5.5-2.8-32.8-16.2-37.9-18-5.1-1.9-8.8-2.8-12.5 2.8-3.7 5.6-14.3 18-17.6 21.8-3.2 3.7-6.5 4.2-12 1.4-32.4-16.2-53.7-28.9-75.1-65.5-5.7-9.8 5.7-9.1 16.3-30.3 1.8-3.7.9-6.9-.5-9.7-1.4-2.8-12.5-30.1-17.1-41.2-4.5-10.8-9.1-9.3-12.5-9.5-3.2-.2-6.9-.2-10.6-.2-3.7 0-9.7 1.4-14.8 6.9-5.1 5.6-19.4 19-19.4 46.3 0 27.3 19.9 53.7 22.6 57.42.8 3.7 39.1 59.7 94.8 83.8 35.2 15.2 49 16.5 66.6 13.9 10.7-1.6 32.8-13.4 37.4-26.4 4.6-13 4.6-24.1 3.2-26.4-1.3-2.5-5-3.9-10.5-6.6z"/></svg></span> Quero!
+                </a>
+                <button type="button" class="link-peca" data-link="p-hot-wheels" aria-label="Copiar o link de Hot Wheels na cartela">🔗 Copiar link</button>
+              </div>
+            </div>
+          </article>
+
+          <article class="product-card" id="p-ursinho" data-tipo="pelucia">
+            <div class="product-card__image">
+              <img src="fotos/pelucia.jpg" alt="Urso de pelúcia marrom" loading="lazy">
+            </div>
+            <div class="product-card__content">
+              <span class="product-card__category">Pelúcia</span>
+              <h3>Ursinho de pelúcia</h3>
+              <p class="estado estado--aviso">Com avaria leve — costura do braço</p>
+              <p class="product-card__description">Pelúcia macia, bem conservada e já lavadinha. A costura de um braço tá começando a soltar, dá pra arrumar fácil. Por isso o preço.</p>
+              <p class="price"><small>R$</small> 55,00</p>
+              <div class="product-card__acoes">
+                <a class="button button--whatsapp" data-produto="Ursinho de pelúcia" href="#" target="_blank" rel="noopener">
+                  <span class="icon-whatsapp" aria-hidden="true"><svg viewBox="0 0 448 512"><path fill="currentColor" d="M380.9 97.1C339 55.1 283.2 32 223.9 32c-122.4 0-222 99.6-222 222 0 39.1 10.2 77.3 29.6 111L0 480l117.7-30.9c32.4 17.7 68.9 27 106.1 27h.1c122.3 0 224.1-99.6 224.1-222 0-59.3-25.2-115-67.1-157zM223.9 431.9c-33.2 0-65.7-8.9-94-25.7l-6.7-4-69.8 18.3L72 351.6l-4.4-7c-18.5-29.4-28.2-63.3-28.2-98.2 0-101.7 82.8-184.5 184.6-184.5 49.3 0 95.6 19.2 130.4 54.1c34.8 34.9 56.2 81.2 56.1 130.5 0 101.8-84.9 184.6-186.6 184.6zm101.2-138.2c-5.5-2.8-32.8-16.2-37.9-18-5.1-1.9-8.8-2.8-12.5 2.8-3.7 5.6-14.3 18-17.6 21.8-3.2 3.7-6.5 4.2-12 1.4-32.4-16.2-53.7-28.9-75.1-65.5-5.7-9.8 5.7-9.1 16.3-30.3 1.8-3.7.9-6.9-.5-9.7-1.4-2.8-12.5-30.1-17.1-41.2-4.5-10.8-9.1-9.3-12.5-9.5-3.2-.2-6.9-.2-10.6-.2-3.7 0-9.7 1.4-14.8 6.9-5.1 5.6-19.4 19-19.4 46.3 0 27.3 19.9 53.7 22.6 57.42.8 3.7 39.1 59.7 94.8 83.8 35.2 15.2 49 16.5 66.6 13.9 10.7-1.6 32.8-13.4 37.4-26.4 4.6-13 4.6-24.1 3.2-26.4-1.3-2.5-5-3.9-10.5-6.6z"/></svg></span> Quero!
+                </a>
+                <button type="button" class="link-peca" data-link="p-ursinho" aria-label="Copiar o link de Ursinho de pelúcia">🔗 Copiar link</button>
+              </div>
+            </div>
+          </article>
+
+        </div>
+
+        <p class="grade__vazio" id="grade-vazio" hidden>Não tem brinquedinho desse tipo essa semana. Dá uma olhada nos outros ou <a href="#encomenda">pede pra gente procurar</a>.</p>
+
+        <p class="products__nota">Os brinquedinhos saem rápido. Se algum já tiver ido embora quando você chamar, a gente avisa na hora e procura outro igual.</p>
+      </div>
+    </section>
+
+    <!-- ================= GARAGEM ================= -->
+    <section class="garagem section" id="garagem">
+      <div class="container garagem__box">
+        <div class="garagem__icon" aria-hidden="true">📦</div>
+        <div class="garagem__content">
+          <span class="eyebrow eyebrow--yellow">Não precisa pagar frete toda semana</span>
+          <h2>Guardamos seus brinquedinhos por até 3 meses</h2>
+          <p>Comprou hoje, achou outro semana que vem, e mais um depois? Fica tudo guardado com a gente. Quando você mandar, a gente embala tudo junto e sai <strong>um frete só</strong>.</p>
+          <p class="garagem__nota">É você que decide a hora de enviar. Enquanto isso, seus brinquedinhos ficam separados com o seu nome.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- ================= ENCOMENDA ================= -->
+    <section class="encomenda section" id="encomenda">
+      <div class="container">
+        <div class="section-heading">
+          <span class="eyebrow eyebrow--pink">Lista de procura</span>
+          <h2>Tá atrás de um brinquedinho específico?</h2>
+          <p>Manda o nome que a gente procura pra você. Muita coisa chega antes de entrar no site — e quem pediu é a primeira a saber.</p>
+        </div>
+        <div class="encomenda__cta">
+          <a class="button button--primary" href="https://wa.me/5512992141645?text=Oi%20amiga!%20T%C3%B4%20atr%C3%A1s%20de%3A%20" target="_blank" rel="noopener">
+            Pedir um brinquedinho
+          </a>
+          <p>“Se encontrar um martelinho, pega pra mim.” — é assim mesmo, pode mandar.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- ================= FEIRA / REVENDA ================= -->
+    <section class="feira section" id="feira">
+      <div class="container feira__box">
+        <div>
+          <span class="eyebrow eyebrow--pink">Pra quem revende</span>
+          <h2>Compra pra vender na feira?</h2>
+          <p>Fala com a gente <strong>antes da live</strong>. A gente separa lote e faz preço por quantidade.</p>
+          <p>Tem coisa nova toda semana, então dá pra montar banca com brinquedinho que ninguém mais tem na sua cidade. E como a gente guarda por 3 meses, você junta o volume e leva tudo num frete só.</p>
+          <a class="button button--primary" href="https://wa.me/5512992141645?text=Oi%20amiga!%20Compro%20pra%20revender.%20Queria%20saber%20de%20lote%20e%20pre%C3%A7o%20por%20quantidade." target="_blank" rel="noopener">Falar sobre lote</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- ================= HISTÓRIA ================= -->
     <section class="story section" id="historia">
       <div class="container story__box">
         <div class="story__video">
@@ -74,134 +331,74 @@
         </div>
         <div class="story__content">
           <span class="eyebrow eyebrow--pink">💛 Nosso propósito</span>
-          <h2>Nossa história</h2>
+          <h2>Por que a Toys Kids existe</h2>
           <p>Somos a Toys Kids, uma loja de brinquedinhos que nasceu com um propósito especial.</p>
           <p>Tudo começou com o Samuel, criança que descobriu ainda bebê uma doença rara chamada SKID. Ele faz tratamento nos Estados Unidos desde os 4 meses e, graças a Deus, hoje está curado. As viagens, que antes eram a cada 3 meses, hoje acontecem apenas uma vez por ano.</p>
           <p>É para ajudar a custear essas viagens — passagem, gasolina, um lanche no caminho — que a Toys Kids existe. Cada brinquedinho vendido aqui no site tem esse propósito por trás.</p>
-          <p>Além da loja, fazemos <strong>lives</strong> com uma dinâmica bem gostosa: os <strong>"queros"</strong>. Quem participa se compromete a levar o brinquedinho até o final da live, e esse compromisso é o que realmente sustenta essa corrente de ajuda. Não pedimos doação, pedimos comprometimento — cada quero concluído é um gesto direto de carinho pelo Samuel.</p>
-          <button type="button" class="story__close">Fechar ✕</button>
+          <p>Além da loja, fazemos <strong>lives</strong> com uma dinâmica bem gostosa: os <strong>"queros"</strong>. Quem participa se compromete a levar o brinquedinho até o final da live, e esse compromisso é o que realmente sustenta essa corrente de ajuda.</p>
+          <blockquote class="story__destaque">Não pedimos doação, pedimos comprometimento — cada quero concluído é um gesto direto de carinho pelo Samuel.</blockquote>
         </div>
       </div>
     </section>
 
-    <section class="products section" id="brinquedos">
-      <div class="container">
-        <div class="section-heading">
-          <span class="eyebrow eyebrow--pink">Escolha o favorito</span>
-          <h2>Brinquedos em destaque</h2>
-          <p>Peças escolhidas a dedo pra unir diversão, cor e aprendizado.</p>
-        </div>
-
-        <div class="product-grid">
-          <article class="product-card">
-            <div class="product-card__image">
-              <span class="badge">Mais vendido</span>
-              <img src="https://images.unsplash.com/photo-1568828668638-b1b4014d91a2?auto=format&fit=crop&w=700&q=80" alt="Blocos de madeira educativos coloridos" loading="lazy">
-            </div>
-            <div class="product-card__content">
-              <span class="product-card__category">Educativo • 3+ anos</span>
-              <h3>Blocos Criativos</h3>
-              <p class="product-card__description">Peças coloridas de encaixar que estimulam a coordenação motora e a criatividade em cada torre construída.</p>
-              <p class="price"><small>R$</small> 89,90</p>
-              <a class="button button--whatsapp" data-product="Blocos Criativos" href="#" target="_blank" rel="noopener">
-                <span class="icon-whatsapp" aria-hidden="true"><svg viewBox="0 0 448 512"><path fill="currentColor" d="M380.9 97.1C339 55.1 283.2 32 223.9 32c-122.4 0-222 99.6-222 222 0 39.1 10.2 77.3 29.6 111L0 480l117.7-30.9c32.4 17.7 68.9 27 106.1 27h.1c122.3 0 224.1-99.6 224.1-222 0-59.3-25.2-115-67.1-157zM223.9 431.9c-33.2 0-65.7-8.9-94-25.7l-6.7-4-69.8 18.3L72 351.6l-4.4-7c-18.5-29.4-28.2-63.3-28.2-98.2 0-101.7 82.8-184.5 184.6-184.5 49.3 0 95.6 19.2 130.4 54.1 34.8 34.9 56.2 81.2 56.1 130.5 0 101.8-84.9 184.6-186.6 184.6zm101.2-138.2c-5.5-2.8-32.8-16.2-37.9-18-5.1-1.9-8.8-2.8-12.5 2.8-3.7 5.6-14.3 18-17.6 21.8-3.2 3.7-6.5 4.2-12 1.4-32.4-16.2-53.7-28.9-75.1-65.5-5.7-9.8 5.7-9.1 16.3-30.3 1.8-3.7.9-6.9-.5-9.7-1.4-2.8-12.5-30.1-17.1-41.2-4.5-10.8-9.1-9.3-12.5-9.5-3.2-.2-6.9-.2-10.6-.2-3.7 0-9.7 1.4-14.8 6.9-5.1 5.6-19.4 19-19.4 46.3 0 27.3 19.9 53.7 22.6 57.4 2.8 3.7 39.1 59.7 94.8 83.8 35.2 15.2 49 16.5 66.6 13.9 10.7-1.6 32.8-13.4 37.4-26.4 4.6-13 4.6-24.1 3.2-26.4-1.3-2.5-5-3.9-10.5-6.6z"/></svg></span> Comprar pelo WhatsApp
-              </a>
-            </div>
-          </article>
-
-          <article class="product-card">
-            <div class="product-card__image">
-              <span class="badge badge--blue">Novidade</span>
-              <img src="https://images.unsplash.com/photo-1751379092460-ba86b190ec2f?auto=format&fit=crop&w=700&q=80" alt="Carrinho de brinquedo azul" loading="lazy">
-            </div>
-            <div class="product-card__content">
-              <span class="product-card__category">Aventura • 4+ anos</span>
-              <h3>Carrinho Turbo</h3>
-              <p class="product-card__description">Rodinhas rápidas e design divertido pra correrias sem fim pela casa ou pelo quintal.</p>
-              <p class="price"><small>R$</small> 59,90</p>
-              <a class="button button--whatsapp" data-product="Carrinho Turbo" href="#" target="_blank" rel="noopener">
-                <span class="icon-whatsapp" aria-hidden="true"><svg viewBox="0 0 448 512"><path fill="currentColor" d="M380.9 97.1C339 55.1 283.2 32 223.9 32c-122.4 0-222 99.6-222 222 0 39.1 10.2 77.3 29.6 111L0 480l117.7-30.9c32.4 17.7 68.9 27 106.1 27h.1c122.3 0 224.1-99.6 224.1-222 0-59.3-25.2-115-67.1-157zM223.9 431.9c-33.2 0-65.7-8.9-94-25.7l-6.7-4-69.8 18.3L72 351.6l-4.4-7c-18.5-29.4-28.2-63.3-28.2-98.2 0-101.7 82.8-184.5 184.6-184.5 49.3 0 95.6 19.2 130.4 54.1 34.8 34.9 56.2 81.2 56.1 130.5 0 101.8-84.9 184.6-186.6 184.6zm101.2-138.2c-5.5-2.8-32.8-16.2-37.9-18-5.1-1.9-8.8-2.8-12.5 2.8-3.7 5.6-14.3 18-17.6 21.8-3.2 3.7-6.5 4.2-12 1.4-32.4-16.2-53.7-28.9-75.1-65.5-5.7-9.8 5.7-9.1 16.3-30.3 1.8-3.7.9-6.9-.5-9.7-1.4-2.8-12.5-30.1-17.1-41.2-4.5-10.8-9.1-9.3-12.5-9.5-3.2-.2-6.9-.2-10.6-.2-3.7 0-9.7 1.4-14.8 6.9-5.1 5.6-19.4 19-19.4 46.3 0 27.3 19.9 53.7 22.6 57.4 2.8 3.7 39.1 59.7 94.8 83.8 35.2 15.2 49 16.5 66.6 13.9 10.7-1.6 32.8-13.4 37.4-26.4 4.6-13 4.6-24.1 3.2-26.4-1.3-2.5-5-3.9-10.5-6.6z"/></svg></span> Comprar pelo WhatsApp
-              </a>
-            </div>
-          </article>
-
-          <article class="product-card">
-            <div class="product-card__image">
-              <img src="https://images.unsplash.com/photo-1538292999061-16ca3647ab1c?auto=format&fit=crop&w=700&q=80" alt="Ursinho de pelúcia macio" loading="lazy">
-            </div>
-            <div class="product-card__content">
-              <span class="product-card__category">Pelúcia • Todas as idades</span>
-              <h3>Ursinho Abraço</h3>
-              <p class="product-card__description">Pelúcia macia e fofinha, perfeita pra abraçar na hora de dormir ou levar pra qualquer lugar.</p>
-              <p class="price"><small>R$</small> 74,90</p>
-              <a class="button button--whatsapp" data-product="Ursinho Abraço" href="#" target="_blank" rel="noopener">
-                <span class="icon-whatsapp" aria-hidden="true"><svg viewBox="0 0 448 512"><path fill="currentColor" d="M380.9 97.1C339 55.1 283.2 32 223.9 32c-122.4 0-222 99.6-222 222 0 39.1 10.2 77.3 29.6 111L0 480l117.7-30.9c32.4 17.7 68.9 27 106.1 27h.1c122.3 0 224.1-99.6 224.1-222 0-59.3-25.2-115-67.1-157zM223.9 431.9c-33.2 0-65.7-8.9-94-25.7l-6.7-4-69.8 18.3L72 351.6l-4.4-7c-18.5-29.4-28.2-63.3-28.2-98.2 0-101.7 82.8-184.5 184.6-184.5 49.3 0 95.6 19.2 130.4 54.1 34.8 34.9 56.2 81.2 56.1 130.5 0 101.8-84.9 184.6-186.6 184.6zm101.2-138.2c-5.5-2.8-32.8-16.2-37.9-18-5.1-1.9-8.8-2.8-12.5 2.8-3.7 5.6-14.3 18-17.6 21.8-3.2 3.7-6.5 4.2-12 1.4-32.4-16.2-53.7-28.9-75.1-65.5-5.7-9.8 5.7-9.1 16.3-30.3 1.8-3.7.9-6.9-.5-9.7-1.4-2.8-12.5-30.1-17.1-41.2-4.5-10.8-9.1-9.3-12.5-9.5-3.2-.2-6.9-.2-10.6-.2-3.7 0-9.7 1.4-14.8 6.9-5.1 5.6-19.4 19-19.4 46.3 0 27.3 19.9 53.7 22.6 57.4 2.8 3.7 39.1 59.7 94.8 83.8 35.2 15.2 49 16.5 66.6 13.9 10.7-1.6 32.8-13.4 37.4-26.4 4.6-13 4.6-24.1 3.2-26.4-1.3-2.5-5-3.9-10.5-6.6z"/></svg></span> Comprar pelo WhatsApp
-              </a>
-            </div>
-          </article>
-
-          <article class="product-card">
-            <div class="product-card__image">
-              <span class="badge badge--yellow">Oferta</span>
-              <img src="https://images.unsplash.com/photo-1618842676088-c4d48a6a7c9d?auto=format&fit=crop&w=700&q=80" alt="Blocos coloridos para montar" loading="lazy">
-            </div>
-            <div class="product-card__content">
-              <span class="product-card__category">Montar • 3+ anos</span>
-              <h3>Torre de Formas</h3>
-              <p class="product-card__description">Anéis coloridos pra empilhar e desmontar, ensinando tamanhos, cores e muita paciência brincando.</p>
-              <p class="price"><small>R$</small> 49,90</p>
-              <a class="button button--whatsapp" data-product="Torre de Formas" href="#" target="_blank" rel="noopener">
-                <span class="icon-whatsapp" aria-hidden="true"><svg viewBox="0 0 448 512"><path fill="currentColor" d="M380.9 97.1C339 55.1 283.2 32 223.9 32c-122.4 0-222 99.6-222 222 0 39.1 10.2 77.3 29.6 111L0 480l117.7-30.9c32.4 17.7 68.9 27 106.1 27h.1c122.3 0 224.1-99.6 224.1-222 0-59.3-25.2-115-67.1-157zM223.9 431.9c-33.2 0-65.7-8.9-94-25.7l-6.7-4-69.8 18.3L72 351.6l-4.4-7c-18.5-29.4-28.2-63.3-28.2-98.2 0-101.7 82.8-184.5 184.6-184.5 49.3 0 95.6 19.2 130.4 54.1 34.8 34.9 56.2 81.2 56.1 130.5 0 101.8-84.9 184.6-186.6 184.6zm101.2-138.2c-5.5-2.8-32.8-16.2-37.9-18-5.1-1.9-8.8-2.8-12.5 2.8-3.7 5.6-14.3 18-17.6 21.8-3.2 3.7-6.5 4.2-12 1.4-32.4-16.2-53.7-28.9-75.1-65.5-5.7-9.8 5.7-9.1 16.3-30.3 1.8-3.7.9-6.9-.5-9.7-1.4-2.8-12.5-30.1-17.1-41.2-4.5-10.8-9.1-9.3-12.5-9.5-3.2-.2-6.9-.2-10.6-.2-3.7 0-9.7 1.4-14.8 6.9-5.1 5.6-19.4 19-19.4 46.3 0 27.3 19.9 53.7 22.6 57.4 2.8 3.7 39.1 59.7 94.8 83.8 35.2 15.2 49 16.5 66.6 13.9 10.7-1.6 32.8-13.4 37.4-26.4 4.6-13 4.6-24.1 3.2-26.4-1.3-2.5-5-3.9-10.5-6.6z"/></svg></span> Comprar pelo WhatsApp
-              </a>
-            </div>
-          </article>
-
-          <article class="product-card">
-            <div class="product-card__image">
-              <img src="https://images.unsplash.com/photo-1501686637-b7aa9c48a882?auto=format&fit=crop&w=700&q=80" alt="Conjunto de brinquedos coloridos" loading="lazy">
-            </div>
-            <div class="product-card__content">
-              <span class="product-card__category">Imaginação • 5+ anos</span>
-              <h3>Kit Pequeno Inventor</h3>
-              <p class="product-card__description">Um conjunto cheio de peças pra montar, desmontar e inventar histórias sem parar.</p>
-              <p class="price"><small>R$</small> 119,90</p>
-              <a class="button button--whatsapp" data-product="Kit Pequeno Inventor" href="#" target="_blank" rel="noopener">
-                <span class="icon-whatsapp" aria-hidden="true"><svg viewBox="0 0 448 512"><path fill="currentColor" d="M380.9 97.1C339 55.1 283.2 32 223.9 32c-122.4 0-222 99.6-222 222 0 39.1 10.2 77.3 29.6 111L0 480l117.7-30.9c32.4 17.7 68.9 27 106.1 27h.1c122.3 0 224.1-99.6 224.1-222 0-59.3-25.2-115-67.1-157zM223.9 431.9c-33.2 0-65.7-8.9-94-25.7l-6.7-4-69.8 18.3L72 351.6l-4.4-7c-18.5-29.4-28.2-63.3-28.2-98.2 0-101.7 82.8-184.5 184.6-184.5 49.3 0 95.6 19.2 130.4 54.1 34.8 34.9 56.2 81.2 56.1 130.5 0 101.8-84.9 184.6-186.6 184.6zm101.2-138.2c-5.5-2.8-32.8-16.2-37.9-18-5.1-1.9-8.8-2.8-12.5 2.8-3.7 5.6-14.3 18-17.6 21.8-3.2 3.7-6.5 4.2-12 1.4-32.4-16.2-53.7-28.9-75.1-65.5-5.7-9.8 5.7-9.1 16.3-30.3 1.8-3.7.9-6.9-.5-9.7-1.4-2.8-12.5-30.1-17.1-41.2-4.5-10.8-9.1-9.3-12.5-9.5-3.2-.2-6.9-.2-10.6-.2-3.7 0-9.7 1.4-14.8 6.9-5.1 5.6-19.4 19-19.4 46.3 0 27.3 19.9 53.7 22.6 57.4 2.8 3.7 39.1 59.7 94.8 83.8 35.2 15.2 49 16.5 66.6 13.9 10.7-1.6 32.8-13.4 37.4-26.4 4.6-13 4.6-24.1 3.2-26.4-1.3-2.5-5-3.9-10.5-6.6z"/></svg></span> Comprar pelo WhatsApp
-              </a>
-            </div>
-          </article>
-
-          <article class="product-card">
-            <div class="product-card__image">
-              <img src="https://images.unsplash.com/photo-1612506001235-f0d0892aa11b?auto=format&fit=crop&w=700&q=80" alt="Boneca infantil" loading="lazy">
-            </div>
-            <div class="product-card__content">
-              <span class="product-card__category">Faz de conta • 3+ anos</span>
-              <h3>Boneca Doce Amiga</h3>
-              <p class="product-card__description">Companheira de brincadeiras de faz de conta, com carinha doce pra cuidar e levar pra todo lado.</p>
-              <p class="price"><small>R$</small> 94,90</p>
-              <a class="button button--whatsapp" data-product="Boneca Doce Amiga" href="#" target="_blank" rel="noopener">
-                <span class="icon-whatsapp" aria-hidden="true"><svg viewBox="0 0 448 512"><path fill="currentColor" d="M380.9 97.1C339 55.1 283.2 32 223.9 32c-122.4 0-222 99.6-222 222 0 39.1 10.2 77.3 29.6 111L0 480l117.7-30.9c32.4 17.7 68.9 27 106.1 27h.1c122.3 0 224.1-99.6 224.1-222 0-59.3-25.2-115-67.1-157zM223.9 431.9c-33.2 0-65.7-8.9-94-25.7l-6.7-4-69.8 18.3L72 351.6l-4.4-7c-18.5-29.4-28.2-63.3-28.2-98.2 0-101.7 82.8-184.5 184.6-184.5 49.3 0 95.6 19.2 130.4 54.1 34.8 34.9 56.2 81.2 56.1 130.5 0 101.8-84.9 184.6-186.6 184.6zm101.2-138.2c-5.5-2.8-32.8-16.2-37.9-18-5.1-1.9-8.8-2.8-12.5 2.8-3.7 5.6-14.3 18-17.6 21.8-3.2 3.7-6.5 4.2-12 1.4-32.4-16.2-53.7-28.9-75.1-65.5-5.7-9.8 5.7-9.1 16.3-30.3 1.8-3.7.9-6.9-.5-9.7-1.4-2.8-12.5-30.1-17.1-41.2-4.5-10.8-9.1-9.3-12.5-9.5-3.2-.2-6.9-.2-10.6-.2-3.7 0-9.7 1.4-14.8 6.9-5.1 5.6-19.4 19-19.4 46.3 0 27.3 19.9 53.7 22.6 57.4 2.8 3.7 39.1 59.7 94.8 83.8 35.2 15.2 49 16.5 66.6 13.9 10.7-1.6 32.8-13.4 37.4-26.4 4.6-13 4.6-24.1 3.2-26.4-1.3-2.5-5-3.9-10.5-6.6z"/></svg></span> Comprar pelo WhatsApp
-              </a>
-            </div>
-          </article>
-        </div>
-      </div>
-    </section>
-
-    <section class="shipping section" id="entregas">
+    <!-- ================= ENTREGA + FAQ ================= -->
+    <section class="shipping section" id="entrega">
       <div class="container shipping__box">
-        <div class="shipping__icon" aria-hidden="true">📦</div>
+        <div class="shipping__icon" aria-hidden="true">🚚</div>
         <div class="shipping__content">
           <span class="eyebrow eyebrow--yellow">Chega até você</span>
-          <h2>Entrega segura em todo o Brasil</h2>
-          <p>Embalamos cada brinquedo com cuidado e enviamos pelos Correios pra qualquer cidade do país. Me chama no WhatsApp com o seu CEP que eu calculo o frete na hora.</p>
-          <a class="button button--light" href="https://wa.me/5512992141645?text=Olá!%20Quero%20calcular%20o%20frete.%20Meu%20CEP%20é:%20" target="_blank" rel="noopener">Calcular meu frete</a>
+          <h2>Enviamos pra todo o Brasil</h2>
+          <p>Somos de Lorena, no Vale do Paraíba. Mandamos pelos Correios, SuperFrete ou Envios OLX — o que sair mais em conta pra você. Me chama no zap com o seu CEP que eu calculo na hora.</p>
+          <a class="button button--light" href="https://wa.me/5512992141645?text=Oi%20amiga!%20Quero%20calcular%20o%20frete.%20Meu%20CEP%20%C3%A9%3A%20" target="_blank" rel="noopener">Calcular meu frete</a>
         </div>
         <div class="shipping__details">
-          <div><span>🧸</span><p><strong>Embalagem cuidadosa</strong>Seu brinquedo chega protegido até a porta de casa</p></div>
-          <div><span>📍</span><p><strong>Código de rastreio</strong>Você acompanha cada etapa da entrega</p></div>
+          <div><span>🧸</span><p><strong>Embalagem cuidadosa</strong>Brinquedinho de coleção vai protegido, sem amassar caixa</p></div>
+          <div><span>📍</span><p><strong>Código de rastreio</strong>Você acompanha cada etapa</p></div>
         </div>
+      </div>
+
+      <div class="container faq">
+        <h2>Perguntas que sempre chegam</h2>
+
+        <details>
+          <summary>Como sei se o brinquedinho tem avaria?</summary>
+          <p>Tá escrito em cada um, logo abaixo do nome. Quando tem avaria, a gente diz qual é e mostra na foto. A gente prefere perder a venda a te mandar surpresa.</p>
+        </details>
+
+        <details>
+          <summary>Quero ver o brinquedinho mais de perto. Dá?</summary>
+          <p>Dá sim. Chama no zap pedindo foto de perto que a gente manda — do cabelo, da caixa, do lugar que você quiser ver.</p>
+        </details>
+
+        <details>
+          <summary>Vocês guardam por quanto tempo?</summary>
+          <p>Até 3 meses. Você vai comprando em várias lives e aqui no site, a gente guarda tudo com o seu nome, e envia junto quando você mandar. Um frete só.</p>
+        </details>
+
+        <details>
+          <summary>Dá pra juntar vários num frete só?</summary>
+          <p>Dá, e é o que a maioria faz. Quanto mais brinquedinho no mesmo pacote, mais barato fica o frete de cada um.</p>
+        </details>
+
+        <details>
+          <summary>Qual o prazo pra pagar?</summary>
+          <p>Depois de cada live a gente marca uma data — normalmente cerca de uma semana depois. A data vai avisada no post da live e no seu zap.</p>
+        </details>
+
+        <details>
+          <summary>Em quanto tempo vocês postam?</summary>
+          <p>Assim que o pagamento cai e você confirma que quer enviar. Se estiver guardando com a gente, sai quando você pedir.</p>
+        </details>
+
+        <details>
+          <summary>Dá pra buscar em Lorena?</summary>
+          <p>Dá. Não é comum, a maioria das nossas clientes é de fora, mas se você é da região e prefere buscar, é só combinar no zap.</p>
+        </details>
+
+        <details>
+          <summary>Como funciona a live?</summary>
+          <p>Toda quinta às 19:30, no nosso Facebook. A gente vai mostrando um por um e falando o valor. Quem quiser, comenta “quero” com o nome do brinquedinho e ele fica separado até o fim da live.</p>
+        </details>
       </div>
     </section>
   </main>
@@ -212,7 +409,8 @@
         <img class="brand__logo" src="logo.jpg" alt="">
         <span>Toys <strong>Kids</strong></span>
       </a>
-      <p>Brinquedos com carinho, memórias pra toda vida. 💛</p>
+      <p>Toda semana tem coisa nova. Cada brinquedinho vendido ajuda o Samuel.</p>
+      <p class="footer__gratidao">Gratidão 🙏💛</p>
       <div class="footer__social" aria-label="Redes sociais da Toys Kids">
         <a class="social-link social-link--facebook" href="https://www.facebook.com/share/1EkGLFfrVN/?mibextid=wwXIfr" target="_blank" rel="noopener noreferrer" aria-label="Visitar o Facebook da Toys Kids">
           <svg aria-hidden="true" viewBox="0 0 24 24">
@@ -227,14 +425,16 @@
           <span>Instagram</span>
         </a>
       </div>
-      <p class="footer__copy">© <span id="current-year"></span> Toys Kids. Todos os direitos reservados.</p>
+      <p class="footer__copy">© <span id="current-year"></span> Toys Kids · Lorena, SP</p>
     </div>
   </footer>
 
-  <a class="whatsapp-float" href="https://wa.me/5512992141645?text=Olá!%20Gostaria%20de%20conhecer%20os%20brinquedos." target="_blank" rel="noopener" aria-label="Falar com a Toys Kids pelo WhatsApp">
+  <a class="whatsapp-float" href="https://wa.me/5512992141645?text=Oi%20amiga!%20Vim%20pelo%20site." target="_blank" rel="noopener" aria-label="Falar com a Toys Kids pelo WhatsApp">
     <span class="icon-whatsapp" aria-hidden="true"><svg viewBox="0 0 448 512"><path fill="currentColor" d="M380.9 97.1C339 55.1 283.2 32 223.9 32c-122.4 0-222 99.6-222 222 0 39.1 10.2 77.3 29.6 111L0 480l117.7-30.9c32.4 17.7 68.9 27 106.1 27h.1c122.3 0 224.1-99.6 224.1-222 0-59.3-25.2-115-67.1-157zM223.9 431.9c-33.2 0-65.7-8.9-94-25.7l-6.7-4-69.8 18.3L72 351.6l-4.4-7c-18.5-29.4-28.2-63.3-28.2-98.2 0-101.7 82.8-184.5 184.6-184.5 49.3 0 95.6 19.2 130.4 54.1 34.8 34.9 56.2 81.2 56.1 130.5 0 101.8-84.9 184.6-186.6 184.6zm101.2-138.2c-5.5-2.8-32.8-16.2-37.9-18-5.1-1.9-8.8-2.8-12.5 2.8-3.7 5.6-14.3 18-17.6 21.8-3.2 3.7-6.5 4.2-12 1.4-32.4-16.2-53.7-28.9-75.1-65.5-5.7-9.8 5.7-9.1 16.3-30.3 1.8-3.7.9-6.9-.5-9.7-1.4-2.8-12.5-30.1-17.1-41.2-4.5-10.8-9.1-9.3-12.5-9.5-3.2-.2-6.9-.2-10.6-.2-3.7 0-9.7 1.4-14.8 6.9-5.1 5.6-19.4 19-19.4 46.3 0 27.3 19.9 53.7 22.6 57.4 2.8 3.7 39.1 59.7 94.8 83.8 35.2 15.2 49 16.5 66.6 13.9 10.7-1.6 32.8-13.4 37.4-26.4 4.6-13 4.6-24.1 3.2-26.4-1.3-2.5-5-3.9-10.5-6.6z"/></svg></span>
-    <span class="whatsapp-float__text">Fale com a gente</span>
+    <span class="whatsapp-float__text">Chamar no zap</span>
   </a>
+
+  <div class="toast" id="toast" role="status" aria-live="polite" hidden></div>
 
   <script src="script.js"></script>
 </body>
